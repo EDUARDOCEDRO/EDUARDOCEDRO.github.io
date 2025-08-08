@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Implementação AWS - Abstergo Industries</title>
+    <link rel="stylesheet" href="style.css">
+    <scripe src="script.js"></scripe>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>RELATÓRIO DE IMPLEMENTAÇÃO DE SERVIÇOS AWS <img src="img04.jpg"></h1>
+            <div class="header-meta">
+                <span>Data: 08/08/2025</span>
+                <span>Empresa: Abstergo Industries</span>
+                <span>Responsável: Eduardo Cedro de Souza Junior</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="introducao">
+            <h2>Introdução</h2>
+            <p>Este relatório apresenta o processo de implementação de ferramentas na empresa <b>Abstergo Industries</b>, realizado por <b>Eduardo Cedro de Souza Junior</b>. O objetivo do projeto foi elencar 3 serviços AWS, com a finalidade de realizar diminuição de custos imediatos.</p>
+            <p>Na produção farmacêutica, a AWS oferece soluções escaláveis e eficientes que podem substituir infraestruturas físicas caras, melhorar a gestão de dados e otimizar processos.</p>
+            <div class="divider"></div>
+        </section>
+
+        <section id="descricao-projeto">
+            <h2>Descrição do Projeto</h2>
+            <p>O projeto de implementação de ferramentas foi dividido em 3 etapas, cada uma com seus objetivos específicos. A seguir, serão descritas as etapas do projeto.</p>
+            <div class="divider"></div>
+        </section>
+
+        <section id="etapa1">
+            <h3>Etapa 1: Amazon EC2 Auto Scaling (Escalonamento Automático de Servidores)</h3>
+            <img src="img01.jpg">
+            <div class="tool-card">
+                <div class="tool-name">Nome da ferramenta:</div>
+                <p>Amazon EC2 Auto Scaling</p>
+                
+                <div class="tool-focus"><b>Foco da ferramenta:</b></div>
+                <p>Garantir que a Abstergo tenha o número correto de instâncias EC2 em execução para lidar com a carga da sua aplicação, de forma automática e eficiente.</p>
+                
+                <div class="tool-focus"><b>Descrição de caso de uso:</b></div>
+                <p>A Abstergo Industries possui servidores físicos que ficam subutilizados fora de picos de produção. Com o Amazon EC2 Auto Scaling, a infraestrutura ajusta automaticamente o número de instâncias (servidores virtuais) conforme a demanda.</p>
+                <p class="highlight-box">Economia: Paga-se apenas pelo uso real, evitando custos com servidores parados.</p>
+            </div>
+            <div class="divider"></div>
+        </section>
+
+        <section id="etapa2">
+            <h3>Etapa 2: Amazon S3 Intelligent-Tiering (Armazenamento de Dados com Custos Otimizados)</h3>
+            <img src="img02.png">
+            <di class="tool-card">
+                <div class="tool-name">Nome da ferramenta:</div>
+                <p>Amazon S3 Intelligent-Tiering</p>
+                
+                <div class="tool-focus"><b>Foco da ferramenta:</b></div>
+                <p>Otimizar custos de armazenamento em nuvem automaticamente, movendo dados entre camadas (tiers) de armazenamento conforme padrões de acesso sem comprometer a disponibilidade ou a performance.</p>
+                
+                <div class="tool-focus"><b>Descrição de caso de uso:</b></div>
+                <p>A indústria farmacêutica lida com grandes volumes de dados (pesquisas, registros de produção, compliance). O Amazon S3 Intelligent-Tiering classifica automaticamente os dados em camadas de armazenamento (frequente, pouco acessado, arquivamento).</p>
+                <p class="highlight-box">Economia: Redução de até 70% nos custos de armazenamento em comparação a servidores locais.</p>
+            </div>
+            <div class="divider"></div>
+        </section>
+
+        <section id="etapa3">
+            <h3>Etapa 3: AWS Lambda (Processamento sem Servidores Permanentes)</h3>
+            <img src="img03.png">
+            <div class="tool-card">
+                <div class="tool-name">Nome da ferramenta:</div>
+                <p>AWS Lambda</p>
+                
+                <div class="tool-focus"><b>Foco da ferramenta:</b></div>
+                <p>Eliminar custos com servidores para tarefas eventuais.</p>
+                
+                <div class="tool-focus"><b>Descrição de caso de uso:</b></div>
+                <p>A Abstergo Industries executa tarefas como análise de lotes e relatórios de forma esporádica. O AWS Lambda permite rodar códigos (ex: Python, Java) sem manter servidores ativos 24/7.</p>
+                <p class="highlight-box">Economia: Cobrança apenas pelo tempo de execução (milissegundos), sem custos fixos.</p>
+            </div>
+            <div class="divider"></div>
+        </section>
+
+        <section id="conclusao">
+            <h2>Conclusão</h2>
+            <p>A implementação dos serviços AWS na Abstergo Industries proporcionará:</p>
+            
+            <div class="conclusion-grid">
+                <div class="conclusion-item">
+                    <h4>Redução de Custos</h4>
+                    <p>Redução imediata de custos com infraestrutura física e servidores ociosos.</p>
+                </div>
+                <div class="conclusion-item">
+                    <h4>Otimização de Armazenamento</h4>
+                    <p>Otimização de armazenamento de dados com menor custo operacional.</p>
+                </div>
+                <div class="conclusion-item">
+                    <h4>Processamento Eficiente</h4>
+                    <p>Processamento eficiente de tarefas sem necessidade de servidores dedicados.</p>
+                </div>
+            </div>
+
+            <h3>Recomendações:</h3>
+            <ul>
+                <li>Monitorar os custos mensais no AWS Cost Explorer para ajustes contínuos.</li>
+                <li>Explorar outros serviços como Amazon RDS (banco de dados gerenciado) e AWS Batch (processamento em lote).</li>
+            </ul>
+            <div class="divider"></div>
+        </section>
+
+        <section id="anexos">
+            <h2>Anexos</h2>
+            <div class="attachments">
+                <div class="attachment-item">
+                    <h4>AWS Calculator</h4>
+                    <p>Acesse: <a href="https://calculator.aws/#/" target="_blank">https://calculator.aws/#/</a></p>
+                    <p>Configure uma estimativa de custo exclusivo que atenda às suas necessidades de negócios com produtos e serviços da AWS.</p>
+                </div>
+                
+                <div class="attachment-item">
+                    <h4>Manual Básico de EC2 Auto Scaling</h4>
+                    <p>A AWS tem um guia passo a passo: <a href="https://docs.aws.amazon.com/autoscaling/ec2/userguide/" target="_blank">https://docs.aws.amazon.com/autoscaling/ec2/userguide/</a></p>
+                    <ol>
+                        <li><strong>Acesse o Console AWS</strong>: Serviço "EC2".</li>
+                        <li><strong>Crie um Launch Template</strong>: (modelo da máquina virtual).</li>
+                        <li><strong>Configure o Auto Scaling Group</strong>:
+                            <ul>
+                                <li>Defina mínimo/máximo de instâncias (ex: 2 a 10 servidores).</li>
+                                <li>Escolha políticas de escalonamento (ex: aumentar se CPU > 70%).</li>
+                            </ul>
+                        </li>
+                        <li><strong>Teste</strong>: Simule carga e verifique se novas instâncias são ativadas.</li>
+                    </ol>
+                </div>
+                
+                <div class="attachment-item">
+                    <h4>Relatório de Economia - AWS Lambda</h4>
+                    <p>Simule custos em: <a href="https://aws.amazon.com/lambda/pricing/" target="_blank">https://aws.amazon.com/lambda/pricing/</a></p>
+                    <p><strong>Cenário:</strong> Processamento de lotes farmacêuticos (100.000 execuções/mês).</p>
+                    <p><strong>Custo AWS Lambda:</strong> US$ 0.02 (R$ 0.10)</p>
+                    <p><strong>Custo Servidor Local:</strong> US$ 200 (R$ 1.000)</p>
+                    <p><strong>Economia estimada: 99%</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <div class="signature">
+            <p>Assinatura do Responsável pelo Projeto:</p>
+            <p><strong>Eduardo Cedro de Souza Junior</strong></p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Relatório de Implementação AWS &copy; 2025 - Abstergo Industries</p>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top" id="backToTop">↑</a>
+
+    <script>
+        // Botão de voltar ao topo
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Melhorar acessibilidade
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Tab') {
+                backToTopButton.style.display = 'flex';
+            }
+        });
+
+        // Carregamento suave para links internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
